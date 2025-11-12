@@ -1,0 +1,17 @@
+/** @format */
+
+.App {
+  background-color: #020c1b;
+}
+
+.color-text {
+  color: #CCD6F6;
+}
+
+.skill-card {
+  background-image: 
+    linear-gradient(rgba(40, 42, 47, 0.575), rgba(15, 23, 42, 0.9)),
+    url('src/assets/Desktop Wallpaper - Landscape.jpg');
+  background-size: cover;
+  background-position: center;
+}
