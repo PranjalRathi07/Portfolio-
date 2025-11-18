@@ -28,14 +28,9 @@ const Header = () => {
           </li>{" "}
           <li className="nav-item">
             <a href="#" className="nav-link" style={{ color: "#CCD6F6" }}>
-              Skills
+              Certification
             </a>
-          </li>{" "}
-          <li className="nav-item">
-            <a href="#" className="nav-link" style={{ color: "#CCD6F6" }}>
-              Projects
-            </a>
-          </li>{" "}
+          </li>
           <li className="nav-item">
             <a href="#" className="nav-link" style={{ color: "#CCD6F6" }}>
               Education

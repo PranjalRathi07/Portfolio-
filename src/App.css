@@ -9,6 +9,15 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-bottom: 60px;
   }
+  .card-width {
+    width: 900px !important;
+  }
+}
+
+@layer base {
+  a {
+    color: cadetblue !important;
+  }
 }
 
 .App {

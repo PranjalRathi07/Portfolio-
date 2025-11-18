@@ -1,13 +1,16 @@
-const Projects = () => {
+import { div } from "motion/react-client";
+
+const Experience = () => {
   return (
-    <section className="text-gray-600 body-font">
-      <div className="container px-4 py-24 mx-auto">
+    <div>
+      <section className="text-gray-600 body-font">
+      <div className="container px-4 py-24 mx-auto ">
         <div className="title">
-          <span>Projects</span>
+          <span>Experience</span>
         </div>
 
-        <div className="flex flex-wrap -m-4">
-          <div className="p-4 lg:w-1/3">
+        <div className="flex flex-col flex-wrap -m-4">
+          <div className="p-4 lg:w-1/3 card-width ">
             <div className="h-full skill-card bg-opacity-75 px-8 pt-16 pb-15 rounded-lg overflow-hidden text-center relative">
               <h2 className="tracking-widest text-xs title-font font-medium title text-white mb-3">
                 Complaint Management System
@@ -38,21 +41,24 @@ const Projects = () => {
               </a>
             </div>
           </div>
+        </div>
+          
 
-          <div className="p-4 lg:w-1/3">
-            <div className="h-full skill-card bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-              <h2 className="tracking-widest text-xs title-font font-medium title text-white mb-5">
-                Currency Converter
+          <div className="flex flex-col flex-wrap -m-4 justify-end items-end">
+            <div className="p-4 lg:w-1/3 card-width flex justify-end items-end">
+            <div className="h-full skill-card bg-opacity-75 px-8 pt-16 pb-15 rounded-lg overflow-hidden text-center relative ">
+              <h2 className="tracking-widest text-xs title-font font-medium title text-white mb-3">
+                Complaint Management System
               </h2>
               <p className="leading-relaxed mb-3">
-                A web application that allows users to convert currencies
-                seamlessly using real-time exchange rates fetched from a public
-                API.
+                A web-based application designed to streamline the process of
+                lodging, tracking, and resolving complaints for organizations,
+                enhancing customer satisfaction and operational efficiency.
               </p>
               <a
                 target="blank"
                 className="link inline-flex items-center"
-                href="https://github.com/PranjalRathi07/Currency-Converter"
+                href="https://github.com/PranjalRathi07/Complaint-Management-System"
               >
                 Github
                 <svg
@@ -70,20 +76,23 @@ const Projects = () => {
               </a>
             </div>
           </div>
+          </div>
 
-          <div className="p-4 lg:w-1/3">
-            <div className="h-full skill-card bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-              <h2 className="tracking-widest text-xs title-font font-medium title text-white mb-5">
-                E-commerce Website
+          <div className="flex flex-col flex-wrap -m-4">
+          <div className="p-4 lg:w-1/3 card-width ">
+            <div className="h-full skill-card bg-opacity-75 px-8 pt-16 pb-15 rounded-lg overflow-hidden text-center relative">
+              <h2 className="tracking-widest text-xs title-font font-medium title text-white mb-3">
+                Complaint Management System
               </h2>
               <p className="leading-relaxed mb-3">
-                An e-commerce website that offers a seamless online shopping
-                experience with a wide range of products.
+                A web-based application designed to streamline the process of
+                lodging, tracking, and resolving complaints for organizations,
+                enhancing customer satisfaction and operational efficiency.
               </p>
               <a
                 target="blank"
                 className="link inline-flex items-center"
-                href="https://github.com/PranjalRathi07/E-commerce"
+                href="https://github.com/PranjalRathi07/Complaint-Management-System"
               >
                 Github
                 <svg
@@ -102,8 +111,10 @@ const Projects = () => {
             </div>
           </div>
         </div>
-      </div>
+          
+        </div>
     </section>
+    </div>
   );
 };
-export default Projects;
+export default Experience;
