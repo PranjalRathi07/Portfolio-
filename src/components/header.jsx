@@ -1,4 +1,5 @@
 /** @format */
+import PillNav from "../animetion/pillnav";
 
 const Header = () => {
   return (
@@ -9,39 +10,22 @@ const Header = () => {
       {" "}
       <header className="d-flex justify-content-center py-3">
         {" "}
-        <ul className="nav nav-pills">
-          {" "}
-          <li className="nav-item">
-            <a
-              href="#"
-              className="nav-link active"
-              aria-current="page"
-              style={{ color: "#CCD6F6", backgroundColor: "#0A192F" }}
-            >
-              Home
-            </a>
-          </li>{" "}
-          <li className="nav-item">
-            <a href="#" className="nav-link" style={{ color: "#CCD6F6" }}>
-              About Me
-            </a>
-          </li>{" "}
-          <li className="nav-item">
-            <a href="#" className="nav-link" style={{ color: "#CCD6F6" }}>
-              Certification
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#" className="nav-link" style={{ color: "#CCD6F6" }}>
-              Education
-            </a>
-          </li>{" "}
-          <li className="nav-item">
-            <a href="#" className="nav-link" style={{ color: "#CCD6F6" }}>
-              Contact Me
-            </a>
-          </li>{" "}
-        </ul>{" "}
+        <PillNav
+          items={[
+            { label: "Home", href: "/" },
+            { label: "About Me", href: "/about" },
+            { label: "Certification", href: "/certification" },
+            { label: "Education", href: "/education" },
+            { label: "Contact Me", href: "/contact-me" },
+          ]}
+          activeHref="/"
+          className="custom-nav"
+          ease="power2.easeOut"
+          baseColor="#64FFDA"
+          pillColor="#020C1B"
+          hoveredPillTextColor="#020C1B"
+          pillTextColor="#64FFDA"
+        />
       </header>{" "}
     </div>
   );

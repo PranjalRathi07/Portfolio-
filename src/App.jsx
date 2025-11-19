@@ -7,6 +7,8 @@ import Aboutme from "./components/aboutme";
 import Skills from "./components/skills";
 import Projects from "./components/projects";
 import Experience from "./components/experience";
+
+
 function App() {
   return (
     <div className="App">
