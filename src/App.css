@@ -36,7 +36,47 @@
   background-position: center;
 }
 
+.exp-card {
+  background-image: 
+    linear-gradient(rgba(40, 42, 47, 0.575), rgba(15, 23, 42, 0.9));
+}
+
 .imgSize {
   width: 70px;
   height: 70px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: #020c1b;
+  position: relative;
+  top: 100px;
+  left: 527px;
+  border-radius: 50%;
+  border-color: #64FFDA;
+  border-width: 5px;
+}
+
+.dot-right {
+  width: 20px;
+  height: 20px;
+  background-color: #020c1b;
+  position: relative;
+  top: 100px;
+  right: 528px;
+  border-radius: 50%;
+  border-color: #64FFDA;
+  border-width: 5px;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 333px; 
+  bottom: 210px; 
+  width: 2px;
+  border-left: 2px dashed #64FFDA; 
+  z-index: 0;
 }

@@ -21,9 +21,9 @@ const Header = () => {
           activeHref="/"
           className="custom-nav"
           ease="power2.easeOut"
-          baseColor="#64FFDA"
+          baseColor=""
           pillColor="#020C1B"
-          hoveredPillTextColor="#020C1B"
+          hoveredPillTextColor="#fff"
           pillTextColor="#64FFDA"
         />
       </header>{" "}
