@@ -46,7 +46,7 @@ const Hero = () => {
               <img className="h-9 w-9" src="src\assets\github.png" />
             </a>
 
-            <a href="www.linkedin.com/in/pranjal-rathi" target="blank">
+            <a href="https://www.linkedin.com/in/pranjal-rathi/" target="blank">
               <img className="h-9 w-9" src="src\assets\Linkdin.png" />
             </a>
 

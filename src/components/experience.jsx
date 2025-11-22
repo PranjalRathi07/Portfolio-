@@ -15,16 +15,16 @@ const Experience = () => {
             <div className="p-4 lg:w-1/3 card-width ">
               <div className="dot"></div>
               <AnimatedContent
-                distance={200}
+                distance={100}
                 direction="horizontal"
                 reverse={true}
-                duration={1.2}
+                duration={0.8}
                 ease="power3.out"
                 initialOpacity={0.2}
                 animateOpacity
                 scale={1.1}
                 threshold={0.2}
-                delay={0.3}
+                delay={0.1}
               >
                 <div>
                   <div className="h-full exp-card bg-opacity-75 px-8 pt-8 pb-8 rounded-lg overflow-hidden text-start relative w-50">
@@ -43,22 +43,23 @@ const Experience = () => {
           </div>
 
           <div className="flex flex-col flex-wrap -m-4">
-            <div className="p-4 lg:w-1/3 card-width justify-items-end ">
+            <div className="p-4 lg:w-1/3 card-width justify-items-end ml-auto">
               <div className="dot-right"></div>
               <AnimatedContent
-                distance={200}
+                distance={100}
                 direction="horizontal"
                 reverse={false}
-                duration={1.2}
+                duration={0.8}
                 ease="power3.out"
                 initialOpacity={0.2}
                 animateOpacity
                 scale={1.1}
                 threshold={0.2}
-                delay={0.3}
+                delay={0.1}
+                className="w-full flex flex-col items-end"
               >
                 <div>
-                  <div className="h-full exp-card bg-opacity-75 px-8 pt-8 pb-8 rounded-lg overflow-hidden text-end relative w-50">
+                  <div className="h-full exp-card bg-opacity-75 px-8 pt-8 pb-8 rounded-lg overflow-hidden text-end relative w-full max-w-[500px]">
                     <h2 className="tracking-widest text-2xl title-font font-normal title text-white mb-2">
                       Web Development Intern
                     </h2>
@@ -76,16 +77,16 @@ const Experience = () => {
             <div className="p-4 lg:w-1/3 card-width ">
               <div className="dot"></div>
               <AnimatedContent
-                distance={200}
+                distance={100}
                 direction="horizontal"
                 reverse={true}
-                duration={1.2}
+                duration={0.8}
                 ease="power3.out"
                 initialOpacity={0.2}
                 animateOpacity
                 scale={1.1}
                 threshold={0.2}
-                delay={0.3}
+                delay={0.1}
               >
                 <div>
                   <div className="h-full exp-card bg-opacity-75 px-8 pt-8 pb-8 rounded-lg overflow-hidden text-start relative w-50">
