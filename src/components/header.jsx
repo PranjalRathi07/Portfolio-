@@ -1,7 +1,18 @@
 /** @format */
 import PillNav from "../animetion/pillnav";
+import { useLocation } from "react-router-dom";
+
+const Nav_Item = [
+  { label: "Home", href: "/" },
+  { label: "About Me", href: "/aboutme" },
+  { label: "Certification", href: "/certification" },
+  { label: "Education", href: "/education" },
+  { label: "Contact Me", href: "/contact-me" },
+];
 
 const Header = () => {
+  const location = useLocation();
+
   return (
     <div
       className="container"
@@ -11,14 +22,8 @@ const Header = () => {
       <header className="d-flex justify-content-center py-3">
         {" "}
         <PillNav
-          items={[
-            { label: "Home", href: "/" },
-            { label: "About Me", href: "/about" },
-            { label: "Certification", href: "/certification" },
-            { label: "Education", href: "/education" },
-            { label: "Contact Me", href: "/contact-me" },
-          ]}
-          activeHref="/"
+          items={Nav_Item}
+          activeHref={location.pathname}
           className="custom-nav"
           ease="power2.easeOut"
           baseColor=""

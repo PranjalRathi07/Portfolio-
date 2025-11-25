@@ -76,9 +76,9 @@ const Projects = () => {
                     Currency Converter
                   </h2>
                   <p className="leading-relaxed mb-3">
-                    A web application that allows users to convert currencies
-                    seamlessly using real-time exchange rates fetched from a
-                    public API.
+                    A web application that allows users to convert amounts
+                    between different currencies using real-time exchange rates.
+                    Using APIs to fetch the latest currency data.
                   </p>
                   <a
                     target="blank"
@@ -124,7 +124,8 @@ const Projects = () => {
                   </h2>
                   <p className="leading-relaxed mb-3">
                     An e-commerce website that offers a seamless online shopping
-                    experience with a wide range of products.
+                    experience with a wide range of products. Features include
+                    shopping cart. It is built using html, css only.
                   </p>
                   <a
                     target="blank"

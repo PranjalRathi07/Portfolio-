@@ -1,4 +1,7 @@
 /** @format */
+import Skills from "./skills";
+import Projects from "./projects";
+import Experience from "./experience";
 
 const Aboutme = () => {
   return (
@@ -35,6 +38,9 @@ const Aboutme = () => {
           </div>{" "}
         </div>{" "}
       </div>
+      <Skills></Skills>
+      <Projects></Projects>
+      <Experience></Experience>
     </>
   );
 };

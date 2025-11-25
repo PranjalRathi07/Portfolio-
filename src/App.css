@@ -12,6 +12,11 @@
   .card-width {
     width: 900px !important;
   }
+
+  .height{
+    height: 100vh !important;
+    margin-top: 70px !important;
+  }
 }
 
 @layer base {
