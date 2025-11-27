@@ -1,9 +1,10 @@
 /** @format */
 import { motion } from "motion/react";
+import { div } from "motion/react-client";
 
 const Hero = () => {
   return (
-    <div className="container col-xxl-8 px-4 py-5 height">
+    <div className="container col-xxl-8 hero-section">
       {" "}
       <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
         {" "}
@@ -17,7 +18,6 @@ const Hero = () => {
             <img
               src=".\src\assets\Sasuke Uchia - Desktop Wallpaper - Landscape.jpg"
               className="d-block mx-lg-auto img-fluid"
-              alt="Bootstrap Themes"
               width="700"
               height="500"
               loading="lazy"

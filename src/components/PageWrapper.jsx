@@ -17,8 +17,8 @@ const PageWrapper = ({ children }) => {
     gsap.to(el.current, {
       opacity: 1,
       y: 0,
-      duration: 1.5,
-      ease: "power2.out",
+      duration: 0.5,
+      ease: "power3.out",
     });
     
   }, [location.pathname]); 

@@ -12,10 +12,9 @@
   .card-width {
     width: 900px !important;
   }
-
-  .height{
-    height: 100vh !important;
-    margin-top: 70px !important;
+  .hero-section {
+    min-height: calc(100vh - 125px);
+    margin-top: 140px;
   }
 }
 
