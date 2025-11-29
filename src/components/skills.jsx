@@ -12,7 +12,7 @@ const Skills = () => {
         <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
           {" "}
           <div className="col">
-            <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg skill-card">
+            <div className="card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg skill-card">
               {" "}
               <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <img className="imgSize" src="./src/assets/api.png" alt="" />
@@ -29,7 +29,7 @@ const Skills = () => {
           </div>{" "}
           <div className="col">
             {" "}
-            <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg skill-card">
+            <div className="card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg skill-card">
               {" "}
               <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 {" "}
@@ -47,7 +47,7 @@ const Skills = () => {
           </div>{" "}
           <div className="col">
             {" "}
-            <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg skill-card">
+            <div className="card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg skill-card">
               {" "}
               <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
                 {" "}
@@ -65,7 +65,7 @@ const Skills = () => {
           </div>{" "}
           <div className="col">
             {" "}
-            <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg skill-card">
+            <div className="card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg skill-card">
               {" "}
               <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 {" "}
@@ -87,7 +87,7 @@ const Skills = () => {
           </div>{" "}
           <div className="col">
             {" "}
-            <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg skill-card">
+            <div className="card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg skill-card">
               {" "}
               <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 {" "}
@@ -109,7 +109,7 @@ const Skills = () => {
           </div>{" "}
           <div className="col">
             {" "}
-            <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg skill-card">
+            <div className="card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg skill-card">
               {" "}
               <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 {" "}
