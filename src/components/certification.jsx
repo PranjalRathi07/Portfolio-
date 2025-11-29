@@ -5,11 +5,20 @@ const Cretification = () => {
   return (
     <>
       <div
-        className="certification-container"
-        style={{ minHeight: "100vh", overflow: "hidden" }}
+        className="certification-container c-section"
+        style={{ overflow: "hidden" }}
       >
-        <div className="cert-container">
-          <div className="col title py-10 px-12">Certificates</div>
+        <div className="cert-container exp-card">
+          <div className="col py-10 px-12">
+            <span className="title">Certificates</span>
+            <p className="lead mb-3 text-white">
+              I am dedicated to continuous learning and keeping up <br /> with
+              the latest technologies. They are the certifications <br /> I have
+              earned to expand my skill set and deepen my <br />
+              technical knowledge.{" "}
+            </p>
+          </div>
+
           <div
             className="col"
             style={{
@@ -28,9 +37,10 @@ const Cretification = () => {
                 <h3 className="title" style={{ color: "#64FFDA" }}>
                   DSA WITH JAVA
                 </h3>
-                <p>
-                  Completed "Data Structures and Algorithms in Java" course on
-                  Coursera by G.l Bajaj Institute of Technology and Management.
+                <p className="lead mb-3 text-white">
+                  Completed "Data Structures and Algorithms in Java" course by
+                  G.l Bajaj Institute of Technology and Management.
+                  <br />
                   <br />
                   <a
                     target="blank"
@@ -55,16 +65,17 @@ const Cretification = () => {
               </Card>
               <Card>
                 <h3 className="title" style={{ color: "#64FFDA" }}>
-                  DSA WITH JAVA
+                  Training in Core Java and Web skills
                 </h3>
-                <p>
-                  Completed "Data Structures and Algorithms in Java" course on
-                  Coursera by G.l Bajaj Institute of Technology and Management.
+                <p className="lead mb-3 text-white">
+                  I have successfully completed a training program in Core Java
+                  and Web skills.
+                  <br />
                   <br />
                   <a
                     target="blank"
                     className="link inline-flex items-center"
-                    href="https://www.linkedin.com/in/pranjal-rathi/overlay/1752311178969/single-media-viewer/?profileId=ACoAAEMCroMBf0uzPXugQSxENo-Nc8Eziaz5NOY"
+                    href="https://www.linkedin.com/in/pranjal-rathi/details/certifications/1739112104765/single-media-viewer/?profileId=ACoAAEMCroMBf0uzPXugQSxENo-Nc8Eziaz5NOY"
                   >
                     Click to View Certificate
                     <svg
@@ -84,16 +95,17 @@ const Cretification = () => {
               </Card>
               <Card>
                 <h3 className="title" style={{ color: "#64FFDA" }}>
-                  DSA WITH JAVA
+                  Web Development
                 </h3>
-                <p>
-                  Completed "Data Structures and Algorithms in Java" course on
-                  Coursera by G.l Bajaj Institute of Technology and Management.
+                <p className="lead mb-3 text-white">
+                  Completed "Web Development" virtual intership from Acmegrade
+                  duration 2 months.
+                  <br />
                   <br />
                   <a
                     target="blank"
                     className="link inline-flex items-center"
-                    href="https://www.linkedin.com/in/pranjal-rathi/overlay/1752311178969/single-media-viewer/?profileId=ACoAAEMCroMBf0uzPXugQSxENo-Nc8Eziaz5NOY"
+                    href="https://www.linkedin.com/in/pranjal-rathi/details/certifications/1764408528876/single-media-viewer/?profileId=ACoAAEMCroMBf0uzPXugQSxENo-Nc8Eziaz5NOY"
                   >
                     Click to View Certificate
                     <svg
@@ -113,16 +125,18 @@ const Cretification = () => {
               </Card>
               <Card>
                 <h3 className="title" style={{ color: "#64FFDA" }}>
-                  DSA WITH JAVA
+                  Web Development
                 </h3>
-                <p>
-                  Completed "Data Structures and Algorithms in Java" course on
-                  Coursera by G.l Bajaj Institute of Technology and Management.
+                <p className="lead mb-3 text-white">
+                  Completed "Web Development" virtual intership course on
+                  Coursera by CODTECH IT SOLUTION. Learned HTML, CSS,
+                  JavaScript, and more.
+                  <br />
                   <br />
                   <a
                     target="blank"
                     className="link inline-flex items-center"
-                    href="https://www.linkedin.com/in/pranjal-rathi/overlay/1752311178969/single-media-viewer/?profileId=ACoAAEMCroMBf0uzPXugQSxENo-Nc8Eziaz5NOY"
+                    href="https://www.linkedin.com/in/pranjal-rathi/details/certifications/1734242777307/single-media-viewer/?profileId=ACoAAEMCroMBf0uzPXugQSxENo-Nc8Eziaz5NOY"
                   >
                     Click to View Certificate
                     <svg
@@ -142,16 +156,17 @@ const Cretification = () => {
               </Card>
               <Card>
                 <h3 className="title" style={{ color: "#64FFDA" }}>
-                  DSA WITH JAVA
+                  Web Development
                 </h3>
-                <p>
-                  Completed "Data Structures and Algorithms in Java" course on
-                  Coursera by G.l Bajaj Institute of Technology and Management.
+                <p className="lead mb-3 text-white">
+                  Completed "Web Development" virtual internship of 1 month
+                  course on Coursera by Prodigy InfoTech.
+                  <br />
                   <br />
                   <a
                     target="blank"
                     className="link inline-flex items-center"
-                    href="https://www.linkedin.com/in/pranjal-rathi/overlay/1752311178969/single-media-viewer/?profileId=ACoAAEMCroMBf0uzPXugQSxENo-Nc8Eziaz5NOY"
+                    href="https://www.linkedin.com/in/pranjal-rathi/details/certifications/1726985176120/single-media-viewer/?profileId=ACoAAEMCroMBf0uzPXugQSxENo-Nc8Eziaz5NOY"
                   >
                     Click to View Certificate
                     <svg

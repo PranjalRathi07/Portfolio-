@@ -21,6 +21,9 @@ width: 900px !important;
     min-height: calc(100vh - 125px);
     margin-top: 140px;
   }
+  .c-section {
+    min-height: calc(100vh - 32px);
+  }
   .cert-container {
     position: absolute;
     top: 150px;
