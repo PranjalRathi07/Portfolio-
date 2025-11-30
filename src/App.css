@@ -83,6 +83,10 @@ linear-gradient(rgba(40, 42, 47, 0.575), rgba(15, 23, 42, 0.9));
 width: 70px;
 height: 70px;
 }
+.edu-imgSize {
+width: 130px;
+height: 130px;
+}
 
 .dot {
 width: 20px;
