@@ -37,6 +37,19 @@ width: 900px !important;
     overflow: hidden;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   }
+  .edu-container {
+    position: absolute;
+    top: 80px;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: #020C1B;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  }
 }
 
 @layer base {
@@ -83,6 +96,20 @@ border-color: #64FFDA;
 border-width: 5px;
 }
 
+.edu-dot{
+display: flex;
+flex-direction: row;
+width: 20px;
+height: 20px;
+background-color: #020c1b;
+position: relative;
+top: 75px;
+left: -27px;
+border-radius: 50%;
+border-color: #64FFDA;
+border-width: 5px;
+}
+
 .dot-right {
 width: 20px;
 height: 20px;
@@ -101,6 +128,17 @@ left: 50%;
 transform: translateX(-50%);
 top: 333px; 
 bottom: 210px; 
+width: 2px;
+border-left: 2px dashed #64FFDA; 
+z-index: 0;
+}
+
+.edu-line {
+position: absolute;
+left: 72px;
+transform: translateX(-50%);
+top: 216px;
+bottom: 105px; 
 width: 2px;
 border-left: 2px dashed #64FFDA; 
 z-index: 0;

@@ -8,6 +8,7 @@ import PageWrapper from "./components/PageWrapper";
 import { Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import Cretification from "./components/certification";
+import Education from "./components/education";
 
 function App() {
   const location = useLocation();
@@ -37,6 +38,14 @@ function App() {
           element={
             <PageWrapper>
               <Cretification />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/education"
+          element={
+            <PageWrapper>
+              <Education />
             </PageWrapper>
           }
         />
