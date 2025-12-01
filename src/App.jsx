@@ -9,6 +9,7 @@ import { Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import Cretification from "./components/certification";
 import Education from "./components/education";
+import Contact from "./components/contact";
 
 function App() {
   const location = useLocation();
@@ -46,6 +47,14 @@ function App() {
           element={
             <PageWrapper>
               <Education />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/contact-me"
+          element={
+            <PageWrapper>
+              <Contact />
             </PageWrapper>
           }
         />
