@@ -1,6 +1,7 @@
 /** @format */
-import { motion } from "motion/react";
-import { div } from "motion/react-client";
+import * as motion from "motion/react-client";
+import TextType from "../animetion/TextType";
+import { image } from "motion/react-m";
 
 const Hero = () => {
   return (
@@ -10,19 +11,14 @@ const Hero = () => {
         {" "}
         <div className="col-10 col-sm-8 col-lg-6">
           {" "}
-          <motion.div
-            initial={{ backgroundColor: "rgb(0, 255, 0)", opacity: 0 }}
-            whileInView={{ backgroundColor: "rgb(255, 0, 0)", opacity: 1 }}
-          >
-            {" "}
-            <img
-              src=".\src\assets\Sasuke Uchia - Desktop Wallpaper - Landscape.jpg"
-              className="d-block mx-lg-auto img-fluid"
-              width="700"
-              height="500"
-              loading="lazy"
-            />
-          </motion.div>{" "}
+          <img
+            src="src\assets\Gemini_Generated_Image_mrsajmrsajmrsajm.png"
+            className="d-block mx-lg-auto img-fluid"
+            width="700"
+            height="500"
+            loading="eager"
+            style={{ border: "0px", borderRadius: "10px" }}
+          />
         </div>{" "}
         <div className="col-lg-6">
           {" "}
@@ -33,7 +29,17 @@ const Hero = () => {
             Hi, I'm a Pranjal Rathi.
           </h1>{" "}
           <h6 className="display-5 fw-bold mb-3" style={{ color: "#64FFDA" }}>
-            Front-end developer;
+            <TextType
+              text={[
+                "Front-end Developer",
+                "Learning Mern-Stack",
+                "Problem Sloving",
+              ]}
+              typingSpeed={75}
+              pauseDuration={1500}
+              showCursor={true}
+              cursorCharacter=";"
+            />
           </h6>
           <p className="lead" style={{ color: "#CCD6F6" }}>
             "Building fast, modern, and responsive web apps"
