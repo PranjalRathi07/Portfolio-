@@ -59,16 +59,16 @@ const Navbar = () => {
         Uses fixed positioning and toggles background/padding based on scroll state 
       */}
 			<nav
-				className={`fixed top-0 left-0 w-full z-50 flex justify-between items-start md:items-center px-6 md:px-10 transition-all duration-300 font-sans ${
+				className={`fixed left-1/2 -translate-x-1/2 z-50 flex justify-between items-center transition-all duration-500 ease-in-out font-sans ${
 					isScrolled
-						? "py-4 bg-[#070709]/80 backdrop-blur-md border-b border-white/5 shadow-lg"
-						: "py-8 bg-transparent"
+						? "top-4 w-[95%] md:w-[90%] max-w-7xl px-6 md:px-8 py-3 md:py-3.5 bg-[#070709]/80 backdrop-blur-md border border-white/10 shadow-lg rounded-full"
+						: "top-0 w-full px-6 md:px-10 py-8 bg-transparent"
 				}`}>
 				{/* Left: Logo */}
 				<a
 					href='#'
 					className='relative z-50 text-xl md:text-2xl font-black text-white tracking-widest uppercase flex items-baseline'>
-					TAPISH{" "}
+					PRANJAL{" "}
 					<span className='text-blue-500 ml-1 text-3xl leading-none'>.</span>
 				</a>
 
@@ -95,7 +95,7 @@ const Navbar = () => {
 				<a
 					href='#contact'
 					className='relative z-50 hidden md:inline-block bg-[#2563eb] text-white text-[11px] font-bold uppercase tracking-widest px-8 py-3.5 rounded-full shadow-[0_0_24px_rgba(37,99,235,0.5)] hover:shadow-[0_0_32px_rgba(37,99,235,0.7)] hover:-translate-y-0.5 transition-all duration-300'>
-					START PROJECT
+					CONSULT NOW
 				</a>
 
 				{/* Mobile Hamburger Toggle */}

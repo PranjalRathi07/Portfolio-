@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-import logo from "../assets/logo.jpg.jpeg";
+import devnix from "../assets/pfp1.png";
 
 const About = () => {
 	return (
@@ -17,8 +17,8 @@ const About = () => {
 				<div className='relative w-full max-w-[400px] lg:w-[45%] aspect-4/5 rounded-3xl overflow-hidden shrink-0'>
 					{/* The Portrait Image (Replace src with your actual image path) */}
 					<img
-						src={logo}
-						alt='Tapish'
+						src={devnix}
+						alt='Devnix.Studio'
 						className='w-full h-full object-cover rounded-3xl'
 					/>
 
@@ -38,26 +38,26 @@ const About = () => {
 				<div className='w-full lg:w-[55%] flex flex-col'>
 					{/* Section Title */}
 					<h2 className='text-5xl md:text-6xl font-black text-white tracking-tight uppercase mb-5'>
-						MEET <span className='text-[#3b82f6]'>TAPISH.</span>
+						MEET <span className='text-[#3b82f6]'>PRANJAL.</span>
 					</h2>
 
 					{/* Subtitle with line */}
 					<div className='flex items-center gap-4 mb-8'>
 						<div className='w-12 h-px bg-[#3b82f6]/50'></div>
 						<span className='text-[#3b82f6] text-[11px] font-bold tracking-[0.2em] uppercase'>
-							QC SUPERVISOR @ MOTIONCRAFT STUDIOS
+							QUALITY-FOCUSED ENGINEER
 						</span>
 					</div>
 
 					{/* Description Paragraph */}
 					<p className='text-[#9ca3af] text-[15px] md:text-[16px] leading-relaxed font-light mb-12'>
-						I combine creative vision with technical precision to engineer
-						high-retention video content. At{" "}
+						I combine architectural thinking with technical precision to build
+						robust, scalable software solutions.{" "}
 						<span className='text-white font-semibold underline decoration-white/30 underline-offset-4'>
-							MotionCraft Studios
+							With a background in quality control,
 						</span>
-						, every frame is strategically designed to maximize engagement and
-						work with the algorithm.
+						I ensure every line of code is optimized for performance,
+						maintainability, and seamless user experiences.
 					</p>
 
 					{/* Stats Grid */}
@@ -65,7 +65,7 @@ const About = () => {
 						{/* Stat Box 1 */}
 						<div className='bg-[#000000] border border-white/10 rounded-2xl p-6 flex flex-col justify-center transition-colors hover:border-[#5a8ee2]'>
 							<span className='text-3xl md:text-4xl font-bold text-white mb-1.5'>
-								2+
+								1+
 							</span>
 							<span className='text-[10px] text-[#6b7280] font-bold uppercase tracking-widest'>
 								YEARS EXPERIENCE
@@ -75,7 +75,7 @@ const About = () => {
 						{/* Stat Box 2 */}
 						<div className='bg-[#000000] border border-white/10 rounded-2xl p-6 flex flex-col justify-center transition-colors hover:border-[#5a8ee2]'>
 							<span className='text-3xl md:text-4xl font-bold text-white mb-1.5'>
-								25+
+								20+
 							</span>
 							<span className='text-[10px] text-[#6b7280] font-bold uppercase tracking-widest'>
 								PROJECTS DONE
@@ -101,7 +101,7 @@ const About = () => {
 							LET'S TALK
 						</a>
 						<span className='text-[#6b7280] italic text-[14px]'>
-							"Every keyframe tells a story."
+							"The art of precision-driven engineering."
 						</span>
 					</div>
 				</div>

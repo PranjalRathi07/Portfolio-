@@ -1,48 +1,23 @@
 /** @format */
 
-import React, { useState } from "react";
-import apple_ui from "../assets/apple_ui.mp4";
-import comp from "../assets/Comp_1.mp4";
-import talking from "../assets/talking.mp4";
-import documentary from "../assets/documentary_theam.jpg";
-import motion_graphic from "../assets/SHOWREEL2025.jpg";
-import tkh from "../assets/tkh.png";
+import React from "react";
+import cover from "../assets/cover.jpg";
+import cover1 from "../assets/cover1.jpg";
 
 const Services = () => {
-	// State to handle the pop-out video modal
-	const [activeVideo, setActiveVideo] = useState(null);
-
 	// Data array for your projects
 	const projects = [
 		{
-			id: "01",
-			category: "DOCUMENTARY STYLE",
-			title: "PROJECT SHOWCASE",
-			image: documentary,
-			video: comp,
+			title: "AI RESUME ANALYSER",
+			image: cover1,
+			link: "https://ai-resume-analyzer-mi3a-dezq3w1xd.vercel.app/",
 		},
 		{
-			id: "02",
-			category: "MOTION UI",
-			title: "PROJECT SHOWCASE",
-			image: motion_graphic,
-			video: apple_ui,
-		},
-		{
-			id: "03",
-			category: "TALKING HEAD",
-			title: "PROJECT SHOWCASE",
-			image: tkh,
-			video: talking,
+			title: "ONLINE COMPLAINT MANAGEMENT SYSTEM",
+			image: cover,
+			link: "https://complaint-management-system-u988.vercel.app/",
 		},
 	];
-
-	// Function to close the modal when clicking outside the video
-	const handleCloseModal = (e) => {
-		if (e.target.id === "modal-overlay" || e.target.id === "close-btn") {
-			setActiveVideo(null);
-		}
-	};
 
 	return (
 		<>
@@ -69,28 +44,36 @@ const Services = () => {
 						<div className='mt-8 md:mt-0 text-[#888888] text-sm md:text-base max-w-[280px] md:text-right font-medium leading-relaxed'>
 							A curation of high-performing assets created for clients globally.
 							<br />
-							Click to watch.
+							Click to view.
 						</div>
 					</div>
 
 					{/* --- GRID SECTION --- */}
 					<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12 pb-24'>
-						{projects.map((project) => (
+						{projects.map((project, index) => (
 							<div
-								key={project.id}
-								onClick={() => setActiveVideo(project.video)}
+								key={index}
+								onClick={() =>
+									window.open(project.link, "_blank", "noopener,noreferrer")
+								}
 								className='group cursor-pointer flex flex-col w-full relative overflow-hidden rounded-[20px] aspect-4/3 bg-[#111111]'>
 								{/* Bottom Gradient for Text Readability */}
 								<div className='absolute inset-x-0 bottom-0 h-[60%] bg-linear-to-trom-black/90 via-black/40 to-transparent z-10'></div>
 
-								{/* Play Icon overlay */}
+								{/* Link Icon overlay */}
 								<div className='absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 pointer-events-none'>
 									<div className='w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(79,139,255,0.3)]'>
 										<svg
-											className='w-8 h-8 text-white ml-1'
-											fill='currentColor'
+											className='w-8 h-8 text-white'
+											fill='none'
+											stroke='currentColor'
+											strokeWidth='2'
 											viewBox='0 0 24 24'>
-											<path d='M8 5v14l11-7z' />
+											<path
+												strokeLinecap='round'
+												strokeLinejoin='round'
+												d='M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25'
+											/>
 										</svg>
 									</div>
 								</div>
@@ -99,7 +82,7 @@ const Services = () => {
 								<img
 									src={project.image}
 									alt={project.title}
-									className='absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 z-0'
+									className='absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-105 group-hover:blur-sm z-0'
 									loading='lazy'
 								/>
 
@@ -121,33 +104,6 @@ const Services = () => {
 				{/* This creates the exact subtle line shown in the screenshot separating the sections */}
 				<div className='w-full h-1.5 bg-linear-to-r from-transparent via-[#4F8BFF] to-transparent'></div>
 			</section>
-
-			{/* --- VIDEO MODAL POP-UP --- */}
-			{activeVideo && (
-				<div
-					id='modal-overlay'
-					onClick={handleCloseModal}
-					className='fixed inset-0 z-100 bg-black/95 flex items-center justify-center p-4 sm:p-10 backdrop-blur-sm'>
-					{/* Close Button */}
-					<button
-						id='close-btn'
-						onClick={() => setActiveVideo(null)}
-						className='absolute top-6 right-6 md:top-10 md:right-10 text-white text-4xl hover:text-[#4F8BFF] transition-colors z-101'>
-						&times;
-					</button>
-
-					{/* Video Player */}
-					<div className='relative w-full max-w-[1200px] aspect-video bg-black rounded-xl overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] ring-1 ring-white/10'>
-						<video
-							src={activeVideo}
-							controls
-							autoPlay
-							className='w-full h-full object-contain'>
-							Your browser does not support the video tag.
-						</video>
-					</div>
-				</div>
-			)}
 		</>
 	);
 };

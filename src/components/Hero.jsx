@@ -12,14 +12,14 @@ const Hero = () => {
 			<div className='relative flex flex-col items-center justify-center z-10 select-none'>
 				<div className='flex flex-row items-center gap-4 sm:gap-6 md:gap-8'>
 					{/* Left: "MOTION" Text */}
-					<h1 className='text-[12vw] sm:text-[80px] md:text-[120px] lg:text-[150px] font-black leading-[0.8] tracking-tighter uppercase relative z-10 bg-linear-to-r from-gray-600 via-white to-gray-600 bg-size-[200%_auto] text-transparent bg-clip-text animate-gradientText'>
-						MOTION
+					<h1 className='text-[12vw] sm:text-[80px] md:text-[120px] lg:text-[140px] font-black leading-[0.8] tracking-tighter uppercase relative z-10 bg-linear-to-r from-gray-600 via-white to-gray-600 bg-size-[200%_auto] text-transparent bg-clip-text animate-gradientText'>
+						DEVNIX.
 					</h1>
 
 					{/* Right: "CRAFT" Text */}
 					<div className='relative'>
-						<h1 className='text-[12vw] sm:text-[80px] md:text-[120px] lg:text-[150px] font-black leading-[0.8] tracking-tighter uppercase relative z-10 bg-linear-to-r from-[#5c98ff] via-gray-400 to-[#5c98ff] bg-size-[200%_auto] text-transparent bg-clip-text animate-gradientText'>
-							CRAFT
+						<h1 className='text-[12vw] sm:text-[80px] md:text-[120px] lg:text-[140px] font-black leading-[0.8] tracking-tighter uppercase relative z-10 bg-linear-to-r from-[#5c98ff] via-gray-400 to-[#5c98ff] bg-size-[200%_auto] text-transparent bg-clip-text animate-gradientText'>
+							STUDIO
 						</h1>
 
 						{/* Sparkle Icon */}
@@ -39,11 +39,12 @@ const Hero = () => {
 
 			{/* Subtitle Description */}
 			<p className='mt-10 md:mt-14 text-[#9ca3af] text-base md:text-[19px] max-w-[800px] text-center font-light leading-relaxed tracking-wide z-10 relative'>
-				Built for attention. Engineered for{" "}
+				Turning complex logic into seamless digital experiences.{" "}
 				<span className='text-white font-bold underline decoration-white/40 underline-offset-[6px]'>
-					retention
+					into seamless digital experiences.
 				</span>{" "}
-				designed to dominate <br className='hidden md:block' /> the algorithm.
+				Building scalable, high-performance applications with clean,
+				<br className='hidden md:block' /> maintainable code.
 			</p>
 
 			{/* Stats Row */}
@@ -62,7 +63,7 @@ const Hero = () => {
 							d='M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2m4-2v4m0 0l-2-2m2 2l2-2'
 						/>
 					</svg>
-					<span className='font-bold text-white'>25+</span> Projects
+					<span className='font-bold text-white'>20+</span> Projects
 				</div>
 
 				{/* Divider */}
@@ -82,7 +83,7 @@ const Hero = () => {
 							d='M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z'
 						/>
 					</svg>
-					<span className='font-bold text-white'>10M+</span> Views Generated
+					<span className='font-bold text-white'>99.9%</span> Uptime Deployment
 				</div>
 
 				{/* Divider */}
@@ -113,11 +114,11 @@ const Hero = () => {
 
 			{/* Action Buttons Row */}
 			<div className='mt-14 flex flex-col sm:flex-row items-center gap-6 z-10 relative'>
-				{/* Start Project Button */}
+				{/* CONSULT NOW Button */}
 				<a
 					href='#contact'
 					className='group flex items-center justify-center gap-3 bg-[#2563eb] text-white text-[12px] font-extrabold uppercase tracking-widest px-8 py-4 rounded-full shadow-[0_0_32px_rgba(37,99,235,0.4)] hover:shadow-[0_0_48px_rgba(37,99,235,0.6)] hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto'>
-					START PROJECT
+					CONSULT NOW
 					<svg
 						className='w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300'
 						fill='none'
@@ -141,7 +142,7 @@ const Hero = () => {
 							fill='currentColor'>
 							<path d='M5 3l14 9-14 9V3z' />
 						</svg>
-						WATCH SHOWREEL
+						WATCH SHOWCASE
 					</button>
 				</a>
 			</div>

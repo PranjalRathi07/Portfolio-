@@ -10,10 +10,6 @@
 
 /*---break--- */
 
-@custom-variant dark (&:is(.dark *));
-
-/*---break--- */
-
 @theme inline {
 	--font-heading: var(--font-sans);
 
@@ -279,7 +275,7 @@ html {
 
 .animate-marquee {
 	/* 15s is the speed. Lower the number to make it scroll faster */
-	animation: marquee 15s linear infinite;
+	animation: marquee 5s linear infinite;
 	/* Hardware acceleration for smoother scrolling */
 	will-change: transform;
 }
