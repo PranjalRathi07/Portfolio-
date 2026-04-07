@@ -1,16 +1,79 @@
-# React + Vite
+Devnix Studio
+https://devnixstudio.vercel.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Built for performance. Designed to scale.
 
-Currently, two official plugins are available:
+Devnix Studio is a modern development space focused on building high-performance web applications, clean UI/UX experiences, and scalable digital products.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+👨‍💻 About Me
 
-## React Compiler
+Hi, I'm Pranjal Rathi
+Frontend Developer | MERN Stack Learner
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🎯 Passionate about building real-world projects
+💡 Focused on performance + clean design
+🧠 Constantly learning and improving in full-stack development
 
-## Expanding the ESLint configuration
+🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚀 Frontend
+
+React.js
+Tailwind CSS
+JavaScript (ES6+)
+GSAP / Framer Motion
+
+⚙️ Backend
+
+Node.js
+Express.js
+
+🗄️ Database
+
+MongoDB
+SQL
+🧰 Tools & Platforms
+Git & GitHub
+Vercel / Netlify
+
+📌 Featured Projects
+
+🔹 AI Resume & Career Path Analyzer
+ATS-based resume scoring system
+Career suggestions using AI
+Interactive dashboard UI
+Built with MERN Stack
+
+🔹 Complaint Management System
+Role-based authentication (Admin/User)
+Full-stack CRUD operations
+Secure backend with JWT
+
+🎯 What I Focus On
+
+⚡ Performance Optimization
+🎨 Modern UI/UX (Glassmorphism, Gradients)
+🔐 Secure Backend Systems
+📊 Real-world scalable applications
+
+📈 Current Goals
+
+🚀 Master MERN Stack
+🧠 Improve DSA & problem solving
+🌍 Build impactful real-world products
+
+🌐 Connect With Me
+
+💼 LinkedIn:
+👉 https://www.linkedin.com/in/pranjal-rathi/
+
+📸 Instagram (Devnix Studio):
+👉 https://instagram.com/devnix.studio
+
+⚡ Devnix Philosophy
+
+“Code is not just functionality — it’s an experience.”
+
+⭐ Support
+
+If you like my work, consider ⭐ starring my repositories!
