@@ -10,7 +10,7 @@ const Services = () => {
 		{
 			title: "AI RESUME ANALYSER",
 			image: cover1,
-			link: "https://ai-resume-analyzer-mi3a-dezq3w1xd.vercel.app/",
+			link: "https://ai-resume-analyzer-jgqj.vercel.app/",
 		},
 		{
 			title: "ONLINE COMPLAINT MANAGEMENT SYSTEM",
