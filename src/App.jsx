@@ -1,18 +1,41 @@
 /** @format */
+import React, { useState, useEffect, Suspense, lazy } from "react";
+import { motion } from "framer-motion";
 import Galaxy from "./component/Galaxy";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import About from "./components/About";
-import WhyMe from "./components/Why_me";
-import MarqueeStrip from "./components/MarqueeStrip";
-import Services from "./components/Services";
-import Contact from "./components/Contact";
+
+const About = lazy(() => import("./components/About"));
+const WhyMe = lazy(() => import("./components/Why_me"));
+const MarqueeStrip = lazy(() => import("./components/MarqueeStrip"));
+const Services = lazy(() => import("./components/Services"));
+const Contact = lazy(() => import("./components/Contact"));
+const Footer = lazy(() => import("./components/Footer"));
 
 function App() {
+	const [showGalaxy, setShowGalaxy] = useState(false);
+
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			setShowGalaxy(true);
+		}, 800);
+		return () => clearTimeout(timer);
+	}, []);
+
 	return (
-		<div className='w-full min-h-screen bg-black relative overflow-hidden scroll-smooth'>
+		<div className='w-full min-h-screen bg-black relative scroll-smooth sm:overflow-x-visible overflow-x-hidden'>
 			<Navbar />
-			<div className='fixed inset-0 z-0 pointer-events-auto'>
+
+			{/* The background Galaxy Container */}
+			<motion.div
+				initial={{ clipPath: "circle(0% at 50% 50%)" }}
+				animate={{
+					clipPath: showGalaxy
+						? "circle(150% at 50% 50%)"
+						: "circle(0% at 50% 50%)",
+				}}
+				transition={{ duration: 4, ease: [0.25, 1, 0.4, 1] }}
+				className='fixed inset-0 z-0 pointer-events-auto'>
 				<Galaxy
 					mouseRepulsion
 					mouseInteraction
@@ -27,13 +50,30 @@ function App() {
 					starSpeed={0.5}
 					speed={1}
 				/>
-			</div>
+			</motion.div>
+
+			{/* The Wave / Shockwave Effect overlaying the expansion */}
+			{showGalaxy && (
+				<>
+					{/* Primary Wave */}
+					<motion.div
+						initial={{ width: "0vmax", height: "0vmax", opacity: 0.8 }}
+						animate={{ width: "300vmax", height: "300vmax", opacity: 0 }}
+						transition={{ duration: 6, ease: [0.25, 1, 0.4, 1] }}
+						className='fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white/40 shadow-[0_0_100px_40px_rgba(255,255,255,0.5),inset_0_0_80px_20px_rgba(255,255,255,0.5)] pointer-events-none z-0'
+					/>
+				</>
+			)}
+
 			<Hero />
-			<About />
-			<WhyMe />
-			<MarqueeStrip />
-			<Services />
-			<Contact />
+			<Suspense fallback={<div className="h-screen bg-transparent"></div>}>
+				<About />
+				<WhyMe />
+				<MarqueeStrip />
+				<Services />
+				<Contact />
+				<Footer />
+			</Suspense>
 		</div>
 	);
 }

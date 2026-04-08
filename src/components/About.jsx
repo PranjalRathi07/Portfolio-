@@ -20,6 +20,7 @@ const About = () => {
 						src={devnix}
 						alt='Devnix.Studio'
 						className='w-full h-full object-cover rounded-3xl'
+						loading="lazy"
 					/>
 
 					{/* Dark gradient overlay to match the moody lighting */}

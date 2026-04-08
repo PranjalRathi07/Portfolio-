@@ -59,7 +59,7 @@ const Navbar = () => {
         Uses fixed positioning and toggles background/padding based on scroll state 
       */}
 			<nav
-				className={`fixed left-1/2 -translate-x-1/2 z-50 flex justify-between items-center transition-all duration-500 ease-in-out font-sans ${
+				className={`opacity-0 animate-[slide-down_0.7s_ease-out_forwards] fixed left-1/2 -translate-x-1/2 z-50 flex justify-between items-center transition-all duration-500 ease-in-out font-sans ${
 					isScrolled
 						? "top-4 w-[95%] md:w-[90%] max-w-7xl px-6 md:px-8 py-3 md:py-3.5 bg-[#070709]/80 backdrop-blur-md border border-white/10 shadow-lg rounded-full"
 						: "top-0 w-full px-6 md:px-10 py-8 bg-transparent"
