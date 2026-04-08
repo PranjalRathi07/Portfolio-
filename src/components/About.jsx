@@ -8,11 +8,11 @@ const About = () => {
 		<section
 			id='about'
 			className='relative w-full bg-transparent py-20 px-6 md:px-12 flex justify-center font-sans overflow-hidden'>
-			{/* Subtle Background Glow & Grid/Noise effect (simulated) */}
-			<div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] md:w-[800px] h-[400px] bg-[#09090c]/10 blur-[100px] rounded-[100%] pointer-events-none'></div>
+			{/* Subtle Background Glow & Grid/Noise effect (simulated) using faster radial gradient instead of blur */}
+			<div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] md:w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_center,rgba(9,9,12,0.6)_0%,transparent_70%)] pointer-events-none'></div>
 
 			{/* Main Card Container */}
-			<div className='w-full max-w-[1200px] bg-[#09090c] border border-white/4 rounded-[2.5rem] p-8 md:p-14 lg:p-20 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center shadow-2xl shadow-black/50 hover:border-[#5a8ee2] transition-all duration-300'>
+			<div className='w-full max-w-[1200px] bg-[#09090c] border border-white/4 rounded-[2.5rem] p-8 md:p-14 lg:p-20 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center shadow-2xl shadow-black/50 hover:border-[#5a8ee2] transition-colors duration-300'>
 				{/* Left: Image Container */}
 				<div className='relative w-full max-w-[400px] lg:w-[45%] aspect-4/5 rounded-3xl overflow-hidden shrink-0'>
 					{/* The Portrait Image (Replace src with your actual image path) */}
@@ -98,7 +98,7 @@ const About = () => {
 					<div className='flex flex-col sm:flex-row items-start sm:items-center gap-6'>
 						<a
 							href='#contact'
-							className='bg-white text-black text-[12px] font-extrabold uppercase tracking-widest px-8 py-4 rounded-full hover:bg-gray-200 hover:scale-105 transition-all duration-300 shrink-0'>
+							className='bg-white text-black text-[12px] font-extrabold uppercase tracking-widest px-8 py-4 rounded-full hover:bg-gray-200 hover:scale-105 transition duration-300 shrink-0'>
 							LET'S TALK
 						</a>
 						<span className='text-[#6b7280] italic text-[14px]'>

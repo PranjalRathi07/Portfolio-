@@ -14,12 +14,21 @@ const Footer = lazy(() => import("./components/Footer"));
 
 function App() {
 	const [showGalaxy, setShowGalaxy] = useState(false);
+	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
+		const checkMobile = () => setIsMobile(window.innerWidth < 768);
+		checkMobile();
+		window.addEventListener("resize", checkMobile);
+
 		const timer = setTimeout(() => {
 			setShowGalaxy(true);
 		}, 800);
-		return () => clearTimeout(timer);
+		
+		return () => {
+			clearTimeout(timer);
+			window.removeEventListener("resize", checkMobile);
+		};
 	}, []);
 
 	return (
@@ -28,6 +37,7 @@ function App() {
 
 			{/* The background Galaxy Container */}
 			<motion.div
+				style={{ willChange: "clip-path" }}
 				initial={{ clipPath: "circle(0% at 50% 50%)" }}
 				animate={{
 					clipPath: showGalaxy
@@ -37,9 +47,9 @@ function App() {
 				transition={{ duration: 4, ease: [0.25, 1, 0.4, 1] }}
 				className='fixed inset-0 z-0 pointer-events-auto'>
 				<Galaxy
-					mouseRepulsion
-					mouseInteraction
-					density={1}
+					mouseRepulsion={!isMobile}
+					mouseInteraction={!isMobile}
+					density={isMobile ? 0.5 : 1}
 					glowIntensity={0.2}
 					saturation={0}
 					hueShift={140}
@@ -57,10 +67,11 @@ function App() {
 				<>
 					{/* Primary Wave */}
 					<motion.div
-						initial={{ width: "0vmax", height: "0vmax", opacity: 0.8 }}
-						animate={{ width: "300vmax", height: "300vmax", opacity: 0 }}
+						style={{ willChange: "transform, opacity" }}
+						initial={{ scale: 0, opacity: 0.8, x: "-50%", y: "-50%" }}
+						animate={{ scale: 1, opacity: 0, x: "-50%", y: "-50%" }}
 						transition={{ duration: 6, ease: [0.25, 1, 0.4, 1] }}
-						className='fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white/40 shadow-[0_0_100px_40px_rgba(255,255,255,0.5),inset_0_0_80px_20px_rgba(255,255,255,0.5)] pointer-events-none z-0'
+						className='fixed top-1/2 left-1/2 w-[300vmax] h-[300vmax] rounded-full border-2 border-white/40 shadow-[0_0_100px_40px_rgba(255,255,255,0.5),inset_0_0_80px_20px_rgba(255,255,255,0.5)] pointer-events-none z-0'
 					/>
 				</>
 			)}
