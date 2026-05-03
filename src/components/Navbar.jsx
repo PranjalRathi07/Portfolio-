@@ -27,22 +27,19 @@ const Navbar = () => {
 
 	const navLinks = ["WORK", "ABOUT", "WHY ME", "SERVICES"];
 
+	const getSectionIdForLink = (link) => {
+		let id = link.toLowerCase().replace(" ", "-");
+		if (id === "work") return "services";
+		if (id === "about") return "about";
+		if (id === "why-me") return "why-me";
+		if (id === "services") return "services";
+		return id;
+	};
+
 	// Smooth scroll handler
 	const handleNavClick = (e, link) => {
 		e.preventDefault();
-		let id = link.toLowerCase().replace(" ", "-");
-		if (id === "work") {
-			id = "services";
-		}
-		if (id === "about") {
-			id = "about";
-		}
-		if (id === "why-me") {
-			id = "why-me";
-		}
-		if (id === "services") {
-			id = "services";
-		}
+		const id = getSectionIdForLink(link);
 		// if (id === "contact") {
 		// 	id = "contact";
 		// }
@@ -52,6 +49,22 @@ const Navbar = () => {
 		}
 		setIsMobileMenuOpen(false);
 	};
+
+	// If user loads / shares a URL with a hash, scroll to the correct section.
+	useEffect(() => {
+		const scrollFromHash = () => {
+			const raw = window.location.hash?.replace("#", "");
+			if (!raw) return;
+			const resolved =
+				raw === "work" ? "services" : raw === "why%20me" ? "why-me" : raw;
+			const target = document.getElementById(resolved);
+			if (target) target.scrollIntoView({ behavior: "smooth" });
+		};
+
+		scrollFromHash();
+		window.addEventListener("hashchange", scrollFromHash);
+		return () => window.removeEventListener("hashchange", scrollFromHash);
+	}, []);
 
 	return (
 		<>
@@ -81,7 +94,7 @@ const Navbar = () => {
 						{navLinks.map((link) => (
 							<li key={link}>
 								<a
-									href={`#${link.toLowerCase().replace(" ", "-")}`}
+									href={`#${getSectionIdForLink(link)}`}
 									onClick={(e) => handleNavClick(e, link)}
 									className='text-[11px] font-semibold text-gray-400 hover:text-white uppercase tracking-[0.15em] transition-colors duration-300'>
 									{link}
