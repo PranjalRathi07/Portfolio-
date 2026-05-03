@@ -13,27 +13,27 @@ const Services = () => {
 		{
 			title: "SpamLe - 1",
 			image: cover1,
-			link: "https://landing-page2-nine-ashy.vercel.app/",
+			link: "https://landing-page2-nine-ashy.vercel.app",
 		},
 		{
 			title: "Sample - 2",
 			image: cover2,
-			link: "https://landing-page-lkaz.vercel.app/",
+			link: "https://landing-page-lkaz.vercel.app",
 		},
 		{
 			title: "Sample - 3",
 			image: cover3,
-			link: "https://landing-page4-tau.vercel.app/",
+			link: "https://landing-page4-tau.vercel.app",
 		},
 		{
 			title: "Sample - 4",
 			image: cover4,
-			link: "https://landing-page9-sigma.vercel.app/",
+			link: "https://landing-page9-sigma.vercel.app",
 		},
 		{
 			title: "Sample - 5",
 			image: cover5,
-			link: "https://landing-page45-one.vercel.app/",
+			link: "https://landing-page45-one.vercel.app",
 		},
 	];
 
