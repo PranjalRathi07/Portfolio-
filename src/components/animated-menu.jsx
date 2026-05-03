@@ -21,7 +21,7 @@ const Component = ({ children, className, center = false }) => {
 	return (
 		<motion.span
 			initial='initial'
-			animate={isClicked ? 'hovered' : 'initial'}
+			animate={isClicked ? "hovered" : "initial"}
 			onClick={() => setIsClicked(!isClicked)}
 			className={cn("relative block overflow-hidden", className)}
 			style={{

@@ -82,7 +82,7 @@ const Hero = () => {
 									d='M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2m4-2v4m0 0l-2-2m2 2l2-2'
 								/>
 							</svg>
-							<span className='font-bold text-white'>20+</span> Projects
+							<span className='font-bold text-white'>100+</span> Projects
 						</div>
 
 						<div className='hidden md:block w-px h-4 bg-white/10'></div>

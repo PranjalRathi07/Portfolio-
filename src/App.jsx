@@ -9,7 +9,7 @@ const About = lazy(() => import("./components/About"));
 const WhyMe = lazy(() => import("./components/Why_me"));
 const MarqueeStrip = lazy(() => import("./components/MarqueeStrip"));
 const Services = lazy(() => import("./components/Services"));
-const Contact = lazy(() => import("./components/Contact"));
+// const Contact = lazy(() => import("./components/Contact"));
 const Footer = lazy(() => import("./components/Footer"));
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
 		const timer = setTimeout(() => {
 			setShowGalaxy(true);
 		}, 800);
-		
+
 		return () => {
 			clearTimeout(timer);
 			window.removeEventListener("resize", checkMobile);
@@ -77,12 +77,12 @@ function App() {
 			)}
 
 			<Hero />
-			<Suspense fallback={<div className="h-screen bg-transparent"></div>}>
+			<Suspense fallback={<div className='h-screen bg-transparent'></div>}>
 				<About />
 				<WhyMe />
 				<MarqueeStrip />
 				<Services />
-				<Contact />
+				{/* <Contact /> */}
 				<Footer />
 			</Suspense>
 		</div>

@@ -1,21 +1,39 @@
 /** @format */
 
 import React from "react";
-import cover from "../assets/cover.jpg";
-import cover1 from "../assets/cover1.jpg";
+import cover1 from "../assets/cover1.png";
+import cover2 from "../assets/cover2.png";
+import cover3 from "../assets/cover3.png";
+import cover4 from "../assets/cover4.png";
+import cover5 from "../assets/cover5.png";
 
 const Services = () => {
 	// Data array for your projects
 	const projects = [
 		{
-			title: "AI RESUME ANALYSER",
+			title: "SpamLe - 1",
 			image: cover1,
-			link: "https://ai-resume-analyzer-jgqj.vercel.app/",
+			link: "https://landing-page2-nine-ashy.vercel.app/",
 		},
 		{
-			title: "ONLINE COMPLAINT MANAGEMENT SYSTEM",
-			image: cover,
-			link: "https://complaint-management-system-u988.vercel.app/",
+			title: "Sample - 2",
+			image: cover2,
+			link: "https://landing-page-lkaz.vercel.app/",
+		},
+		{
+			title: "Sample - 3",
+			image: cover3,
+			link: "https://landing-page4-tau.vercel.app/",
+		},
+		{
+			title: "Sample - 4",
+			image: cover4,
+			link: "https://landing-page9-sigma.vercel.app/",
+		},
+		{
+			title: "Sample - 5",
+			image: cover5,
+			link: "https://landing-page45-one.vercel.app/",
 		},
 	];
 

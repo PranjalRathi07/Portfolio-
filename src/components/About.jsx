@@ -20,7 +20,7 @@ const About = () => {
 						src={devnix}
 						alt='Devnix.Studio'
 						className='w-full h-full object-cover rounded-3xl'
-						loading="lazy"
+						loading='lazy'
 					/>
 
 					{/* Dark gradient overlay to match the moody lighting */}
@@ -66,7 +66,7 @@ const About = () => {
 						{/* Stat Box 1 */}
 						<div className='bg-[#000000] border border-white/10 rounded-2xl p-6 flex flex-col justify-center transition-colors hover:border-[#5a8ee2]'>
 							<span className='text-3xl md:text-4xl font-bold text-white mb-1.5'>
-								1+
+								4+
 							</span>
 							<span className='text-[10px] text-[#6b7280] font-bold uppercase tracking-widest'>
 								YEARS EXPERIENCE
@@ -76,7 +76,7 @@ const About = () => {
 						{/* Stat Box 2 */}
 						<div className='bg-[#000000] border border-white/10 rounded-2xl p-6 flex flex-col justify-center transition-colors hover:border-[#5a8ee2]'>
 							<span className='text-3xl md:text-4xl font-bold text-white mb-1.5'>
-								20+
+								100+
 							</span>
 							<span className='text-[10px] text-[#6b7280] font-bold uppercase tracking-widest'>
 								PROJECTS DONE

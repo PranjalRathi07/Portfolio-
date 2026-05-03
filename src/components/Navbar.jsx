@@ -25,7 +25,7 @@ const Navbar = () => {
 		}
 	}, [isMobileMenuOpen]);
 
-	const navLinks = ["WORK", "ABOUT", "WHY ME", "SERVICES", "CONTACT"];
+	const navLinks = ["WORK", "ABOUT", "WHY ME", "SERVICES"];
 
 	// Smooth scroll handler
 	const handleNavClick = (e, link) => {
@@ -43,9 +43,9 @@ const Navbar = () => {
 		if (id === "services") {
 			id = "services";
 		}
-		if (id === "contact") {
-			id = "contact";
-		}
+		// if (id === "contact") {
+		// 	id = "contact";
+		// }
 		const target = document.getElementById(id);
 		if (target) {
 			target.scrollIntoView({ behavior: "smooth" });
