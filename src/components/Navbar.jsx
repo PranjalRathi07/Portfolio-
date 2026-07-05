@@ -96,7 +96,7 @@ const Navbar = () => {
 								<a
 									href={`#${getSectionIdForLink(link)}`}
 									onClick={(e) => handleNavClick(e, link)}
-									className='text-[11px] font-semibold text-gray-400 hover:text-white uppercase tracking-[0.15em] transition-colors duration-300'>
+									className='text-[13px] font-semibold text-gray-400 hover:text-white uppercase tracking-[0.15em] transition-colors duration-300'>
 									{link}
 								</a>
 							</li>
@@ -107,7 +107,7 @@ const Navbar = () => {
 				{/* Right: CTA Button (Desktop Only) */}
 				<a
 					href='#contact'
-					className='relative z-50 hidden md:inline-block bg-[#2563eb] text-white text-[11px] font-bold uppercase tracking-widest px-8 py-3.5 rounded-full shadow-[0_0_24px_rgba(37,99,235,0.5)] hover:shadow-[0_0_32px_rgba(37,99,235,0.7)] hover:-translate-y-0.5 transition-all duration-300'>
+					className='relative z-50 hidden md:inline-block bg-[#2563eb] text-white text-[13px] font-bold uppercase tracking-widest px-8 py-3.5 rounded-full shadow-[0_0_24px_rgba(37,99,235,0.5)] hover:shadow-[0_0_32px_rgba(37,99,235,0.7)] hover:-translate-y-0.5 transition-all duration-300'>
 					CONSULT NOW
 				</a>
 
