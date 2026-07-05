@@ -70,15 +70,15 @@ const Services = () => {
           {/* --- GRID SECTION --- */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12 pb-24">
             {projects.map((project, index) => (
-              <div
+              <a
                 key={index}
-                onClick={() =>
-                  window.open(project.link, "_blank", "noopener,noreferrer")
-                }
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group cursor-pointer flex flex-col w-full relative overflow-hidden rounded-[20px] aspect-4/3 bg-[#111111]"
               >
                 {/* Bottom Gradient for Text Readability */}
-                <div className="absolute inset-x-0 bottom-0 h-[60%] bg-linear-to-trom-black/90 via-black/40 to-transparent z-10"></div>
+                <div className="absolute inset-x-0 bottom-0 h-[60%] bg-linear-to-t from-black/90 via-black/40 to-transparent z-10"></div>
 
                 {/* Link Icon overlay */}
                 <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 pointer-events-none">
@@ -109,14 +109,16 @@ const Services = () => {
 
                 {/* Tags and Title (On Image) */}
                 <div className="absolute bottom-6 left-6 right-6 z-30 flex flex-col items-start transition-transform duration-500 ease-out group-hover:-translate-y-3">
-                  <div className="bg-white text-black text-[10px] md:text-xs font-black px-3 py-1.5 uppercase w-max mb-2 tracking-widest">
-                    {project.category}
-                  </div>
+                  {project.category && (
+                    <div className="bg-white text-black text-[10px] md:text-xs font-black px-3 py-1.5 uppercase w-max mb-2 tracking-widest">
+                      {project.category}
+                    </div>
+                  )}
                   <h3 className="text-white text-2xl md:text-2xl font-black italic uppercase tracking-wide drop-shadow-lg text-left">
                     {project.title}
                   </h3>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
