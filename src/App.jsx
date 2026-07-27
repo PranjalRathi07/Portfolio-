@@ -1,6 +1,6 @@
 /** @format */
-import React, { useState, useEffect, Suspense, lazy } from "react";
-import { motion } from "framer-motion";
+import React, { Suspense, lazy } from "react";
+import { LazyMotion, domAnimation } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Lightfall from "./component/Lightfall";
@@ -14,28 +14,30 @@ const Footer = lazy(() => import("./components/Footer"));
 
 function App() {
   return (
-    <div className="w-full min-h-screen bg-black relative scroll-smooth sm:overflow-x-visible overflow-x-hidden">
-      {/* Lightfall Background */}
-      <div className="fixed inset-0 z-0 pointer-events-auto">
-        <Lightfall
-          backgroundColor="#000000"
-          colors={['#3b82f6', '#1d4ed8', '#0f172a']}
-          speed={0.8}
-        />
+    <LazyMotion features={domAnimation}>
+      <div className="w-full min-h-screen bg-black relative scroll-smooth sm:overflow-x-visible overflow-x-hidden">
+        {/* Lightfall Background */}
+        <div className="fixed inset-0 z-0 pointer-events-auto">
+          <Lightfall
+            backgroundColor="#000000"
+            colors={["#3b82f6", "#1d4ed8", "#0f172a"]}
+            speed={0.8}
+          />
+        </div>
+
+        <Navbar />
+
+        <Hero />
+        <Suspense fallback={<div className="h-screen bg-transparent"></div>}>
+          <About />
+          <WhyMe />
+          <MarqueeStrip />
+          <Services />
+          <Contact />
+          <Footer />
+        </Suspense>
       </div>
-
-      <Navbar />
-
-      <Hero />
-      <Suspense fallback={<div className="h-screen bg-transparent"></div>}>
-        <About />
-        <WhyMe />
-        <MarqueeStrip />
-        <Services />
-        <Contact />
-        <Footer />
-      </Suspense>
-    </div>
+    </LazyMotion>
   );
 }
 
