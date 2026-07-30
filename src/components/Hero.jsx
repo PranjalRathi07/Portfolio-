@@ -3,7 +3,7 @@
 import React, { useRef } from "react";
 import { m as Motion, useScroll, useTransform } from "framer-motion";
 
-const Hero = () => {
+const Hero = ({ isLoaded }) => {
   const sectionRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -30,14 +30,14 @@ const Hero = () => {
             style={{ opacity, scale }}
             className="flex flex-row items-center gap-4 sm:gap-6 md:gap-8"
           >
-            <h1 className="opacity-0 animate-[slide-left_0.8s_ease-out_forwards] text-[10vw] sm:text-[80px] md:text-[140px] lg:text-[160px] font-black leading-[0.8] tracking-tighter uppercase relative z-10">
+            <h1 className={`opacity-0 ${isLoaded ? "animate-[slide-left_0.8s_ease-out_forwards]" : ""} text-[10vw] sm:text-[80px] md:text-[140px] lg:text-[160px] font-black leading-[0.8] tracking-tighter uppercase relative z-10`}>
               <span className="bg-linear-to-r from-gray-600 via-white to-gray-600 bg-size-[200%_auto] text-transparent bg-clip-text animate-gradientText">
                 DEVNIX.
               </span>
             </h1>
 
             <div className="relative">
-              <h1 className="opacity-0 animate-[slide-right_0.8s_ease-out_forwards] text-[10vw] sm:text-[80px] md:text-[140px] lg:text-[160px] font-black leading-[0.8] tracking-tighter uppercase relative z-10">
+              <h1 className={`opacity-0 ${isLoaded ? "animate-[slide-right_0.8s_ease-out_forwards]" : ""} text-[10vw] sm:text-[80px] md:text-[140px] lg:text-[160px] font-black leading-[0.8] tracking-tighter uppercase relative z-10`}>
                 <span className="bg-linear-to-r from-[#5c98ff] via-gray-400 to-[#5c98ff] bg-size-[200%_auto] text-transparent bg-clip-text animate-gradientText">
                   STUDIO
                 </span>
